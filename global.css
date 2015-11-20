@@ -1,15 +1,51 @@
-body{
-    font-size:12px; font-family:"Microsoft YaHei",Arial, Helvetica, sans-serif;}
-html, body, div, span, h1, h2, h3, h4, h5, h6, em, img, strong, sub, sup, tt,dd, dl, dt, form, label, table, caption, tbody, tfoot, thead, tr, th, td,ul,li,p,a{ margin: 0; padding: 0;  }
-input,select,textarea{ vertical-align:middle;}
-img{ border:0;}
-ul,li{ list-style-type:none;}
+/*
+ *根元素html设置为10px即初始rem的大小，后面的像素单位都是以1rem=10px作为标准
+ *响应式布局最好用相对单位rem，使用过程中以根元素html的大小作为参考
+ *for example ：80px=8×1rem(8×10px),  5px=0.5rem(5px/10px)
+*/
+html{
+    font-size:10px; /*1rem,此处可以把任意大小的值设置为1rem，为了方便计算设置为10px*/
+    font-family:"Microsoft YaHei",Arial, Helvetica, sans-serif;
+}
+html, body, div, span, h1, h2, h3, h4, h5, h6, em, img, strong, sub, sup, tt,dd, dl, dt, form, label, table, caption, tbody, tfoot, thead, tr, th, td,ul,li,p,a{
+    margin: 0;
+    padding: 0; 
+}
+input,select,textarea{ 
+    vertical-align:middle;
+}
+img{
+    border:0;
+}
+ul,li{ 
+    list-style-type:none;
+}
 a:link,a:visited{
-    text-decoration:none;color:#010101;}
-a:hover{text-decoration:underline;}
-.overhide{overflow:hidden;text-indent:-100em; }
-.clear {clear: both;}
-.clearfix:after {clear: both;content: ' ';display: block;font-size: 0;line-height: 0;visibility: hidden;width: 0;height: 0;}
-.clearfix{zoom:1;clear: both}
+    text-decoration:none;
+    color:#010101;
+}
+a:hover{
+    text-decoration:underline;
+}
+.overhide{
+    overflow:hidden;
+    text-indent:-100rem;
+}
+.clear {
+    clear: both;
+}
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;}
+.clearfix{
+    zoom:1;
+    clear: both
+}
 
 
